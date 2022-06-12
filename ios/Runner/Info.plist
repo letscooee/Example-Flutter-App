@@ -43,5 +43,13 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>COOEE_APP_ID</key>
+    <string>YOUR_COOEE_APP_ID</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>App uses location to search retailer location</string>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>App uses Bluetooth to find out nearby devices</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Need to access your camera for a better AR experience.</string>
 </dict>
 </plist>
