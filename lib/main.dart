@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cooee_plugin/cooee_plugin.dart';
 
 void main() {
   runApp(const MyApp());

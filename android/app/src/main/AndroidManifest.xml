@@ -1,8 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.letscooee.flutter_demo_app">
-   <application
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+
+    <application
         android:label="flutter_demo_app"
-        android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
@@ -30,5 +34,13 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+        <meta-data
+            android:name="COOEE_APP_ID"
+            android:value="YOUR_COOEE_APP_ID" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
     </application>
 </manifest>
