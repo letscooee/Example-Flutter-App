@@ -1,0 +1,39 @@
+PODS:
+  - cooee_plugin (1.3.7):
+    - CooeeSDK (~> 1.3.15)
+    - Flutter
+  - CooeeSDK (1.3.15):
+    - HandyJSON (~> 5.0.2)
+    - Sentry (~> 7.8.0)
+  - Flutter (1.0.0)
+  - HandyJSON (5.0.2)
+  - Sentry (7.8.0):
+    - Sentry/Core (= 7.8.0)
+  - Sentry/Core (7.8.0)
+
+DEPENDENCIES:
+  - cooee_plugin (from `.symlinks/plugins/cooee_plugin/ios`)
+  - Flutter (from `Flutter`)
+
+SPEC REPOS:
+  trunk:
+    - CooeeSDK
+    - HandyJSON
+    - Sentry
+
+EXTERNAL SOURCES:
+  cooee_plugin:
+    :path: ".symlinks/plugins/cooee_plugin/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  cooee_plugin: ce63c3022cdd37ceb49fe0b5208190fe70dc714b
+  CooeeSDK: ff34206d83bb8e39d05b12ede478d9945b4db54c
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  Sentry: 9b980005a8cd62b4a985ceb431fceb7f17f7615d
+
+PODFILE CHECKSUM: b69d81908136c771f643e5c4782ef31b8f17a95c
+
+COCOAPODS: 1.11.2
