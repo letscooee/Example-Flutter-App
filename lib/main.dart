@@ -105,7 +105,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () => {
                       updateUserProfile(),
                     },
-                child: const Text('Update User profile'))
+                child: const Text('Update User profile')),
+            OutlinedButton(
+                onPressed: () => {
+                  CooeePlugin.setCurrentScreen("Home"),
+                },
+                child: const Text('Tack current screen')),
           ],
         ),
       ),
