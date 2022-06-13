@@ -101,6 +101,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       sendEvent(),
                     },
                 child: const Text('Cooee event')),
+            OutlinedButton(
+                onPressed: () => {
+                      updateUserProfile(),
+                    },
+                child: const Text('Update User profile'))
           ],
         ),
       ),
@@ -126,5 +131,18 @@ class _MyHomePageState extends State<MyHomePage> {
     };
 
     CooeePlugin.sendEvent("View Item", eventProperties);
+  }
+
+  /// Update user profile
+  void updateUserProfile() {
+    // You can pass any data like user_referral_code, user_id, user_name, etc.
+    var userProfile = {
+      "name": "test-user",
+      "email": "test@letscooee.com",
+      "phone": "123456789",
+      "foo": "bar"
+    };
+
+    CooeePlugin.updateUserProfile(userProfile);
   }
 }
