@@ -96,13 +96,11 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
+            OutlinedButton(
+                onPressed: () => {
+                      sendEvent(),
+                    },
+                child: const Text('Cooee event')),
           ],
         ),
       ),
@@ -112,5 +110,21 @@ class _MyHomePageState extends State<MyHomePage> {
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
+  }
+
+  /// Send event to Cooee
+  void sendEvent() {
+    // event name and event propertied can be varied according to app domain
+    var eventProperties = {
+      "item": {
+        "id": "1",
+        "name": "test-item",
+        "price": 10,
+        "quantity": 1,
+        "category": {"name": "test", "id": 1}
+      }
+    };
+
+    CooeePlugin.sendEvent("View Item", eventProperties);
   }
 }
