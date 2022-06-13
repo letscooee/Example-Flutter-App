@@ -3,6 +3,22 @@ import 'package:cooee_plugin/cooee_plugin.dart';
 
 void main() {
   runApp(const MyApp());
+  CooeePlugin cooeePlugin = CooeePlugin();
+  cooeePlugin.setCooeeInAppNotificationAction(inAppTriggered);
+}
+
+/// Will listen for @invokeMethod which will triggered by Java SDK
+void inAppTriggered(Map<String, dynamic> map) {
+  // map["actionType"] varies according to app domain/event
+  if (map["actionType"] == "PLAY_COURSE") {
+    // Product id will be available via "map["courseID"]"
+  } else if (map["actionType"] == "APPLY_COUPON") {
+    // Your code to apply a given coupon.
+    // Coupon code can be accessed via "map["couponCode"]"
+  } else if (map["actionType"] == "GO_TO_SCREEN") {
+    // Your code to take user to a particular screen
+    // Screen name can be accessed via "map["screenName"]"
+  }
 }
 
 class MyApp extends StatelessWidget {
