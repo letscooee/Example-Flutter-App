@@ -5,6 +5,14 @@
         android:name="android.permission.BLUETOOTH"
         android:maxSdkVersion="30" />
 
+    <!-- Cooee Specific- If use case is to show Augmented Reality (AR) related engagements;
+         Need to add CAMERA permission -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- Cooee Specific- If use case is to show engagements with respect to users Location;
+         Need to add ACCESS_FINE_LOCATION permission -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:label="flutter_demo_app"
         android:icon="@mipmap/ic_launcher">
