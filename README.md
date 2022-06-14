@@ -30,6 +30,15 @@ changes separately-
 1. `// Cooee specific` shows the code change required for Cooee plugin to work.
 2. `// Cooee specific (optional)` show the above which is an optional change.
 
+## Branch Convention
+
+#### Branch `multiple_firebase_messaging_plugin`
+
+1. To send engagement to app Cooee uses Firebase Messaging.
+2. If User using any other plugin which supports Firebase Messaging it will
+make conflict of `FirebaseMessagingService` and only one plugin will work.
+3. To Handle this required changes are added on branch.
+
 ## Running the App
 
 To run this project, You will need to do following changes in the repository-
