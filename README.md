@@ -39,6 +39,12 @@ changes separately-
 make conflict of `FirebaseMessagingService` and only one plugin will work.
 3. To Handle this required changes are added on branch.
 
+#### Branch `permission_uses`
+
+1. Cooee support Augmented Reality & Location base engagements.
+2. To make it working Cooee's Flutter plugin requires permissions.
+3. To Handle this required changes are added on branch.
+
 ## Running the App
 
 To run this project, You will need to do following changes in the repository-
